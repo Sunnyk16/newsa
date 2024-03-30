@@ -8,7 +8,7 @@ function Home() {
 
   const loadnews = async () => {
     const response = await axios.get(
-      `https://newsapi.org/v2/everything?domains=wsj.com&apiKey=d4642ac09806460d8c14c26109fd9a23`
+      `https://newsapi.org/v2/everything?domains=wsj.com&apiKey=${process.env.REACT_APP_API_KEY}`
     );
     setNews(response.data.articles);
   };
