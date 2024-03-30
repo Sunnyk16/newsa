@@ -8,7 +8,8 @@ function Home() {
 
   const loadnews = async () => {
     const response = await axios.get(
-      `https://newsapi.org/v2/everything?domains=wsj.com&apiKey=${process.env.REACT_APP_API_KEY}`
+      `https://newsapi.org/v2/everything?q=tesla&from=2024-02-29&sortBy=publishedAt&apiKey=eae77d6bd7a64357b32a2c5e50818077
+      `
     );
     setNews(response.data.articles);
   };
