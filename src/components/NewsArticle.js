@@ -10,6 +10,7 @@
             <p className="text-gray-700 mb-4">{content}</p>
             <p className="text-gray-700">Author: {author}</p>
             <div className="mt-4 flex justify-end">
+                {/* ........ */}
             <a href="#" className="text-indigo-600 hover:text-indigo-800 font-semibold">Read more</a>
             </div>
         </div>
